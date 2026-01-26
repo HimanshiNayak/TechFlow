@@ -17,7 +17,7 @@ const HomePage = () => {
     const {
         allCoursesLoading,
         setAllCoursesLoading,
-        courseArray,
+        courseArray=[],
         setCourseArray,
     } = useGlobalContext();
 
