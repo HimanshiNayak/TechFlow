@@ -41,7 +41,7 @@ button:focus {
   right: 0;
   border-width: 0;
   width: 3rem;
-  background-color: #04e9ae;
+  background-color: #8b6f47;
   outline: none;
   -webkit-transition: width 0.2s ease-in-out;
   -moz-transition: width 0.2s ease-in-out;
@@ -50,7 +50,7 @@ button:focus {
 }
 
 .searchbox:focus ~ .search-hold {
-  box-shadow: 0 20px 25px -5px white, 0 10px 10px -5px white;
+  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.3), 0 2px 6px rgba(139, 111, 71, 0.2);
 }
 @media screen and (min-width: 768px) {
   .searchbox {

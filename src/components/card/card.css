@@ -3,32 +3,89 @@
 
 .card-container {
   background-size: cover;
-  background-color: #212b44;
+  background-color: #3d2817;
   width: 20rem;
   height: 30rem;
   border-width: 0;
   border-radius: 0.8rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
   -webkit-border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
   -ms-border-radius: 0.8rem;
   -o-border-radius: 0.8rem;
 }
+
+/* Animated highlight line effect */
+.card-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(245, 230, 211, 0.4) 20%,
+    rgba(245, 230, 211, 0.7) 50%,
+    rgba(245, 230, 211, 0.4) 80%,
+    transparent 100%
+  );
+  z-index: 2;
+  transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 10px rgba(245, 230, 211, 0.5);
+}
+
 .grow {
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Subtle bounce animation on hover */
+@keyframes cardBounce {
+  0%, 100% {
+    transform: translateY(-10px) scale(1.03);
+  }
+  50% {
+    transform: translateY(-13px) scale(1.035);
+  }
+}
+
+@-webkit-keyframes cardBounce {
+  0%, 100% {
+    -webkit-transform: translateY(-10px) scale(1.03);
+  }
+  50% {
+    -webkit-transform: translateY(-13px) scale(1.035);
+  }
 }
 
 .grow:hover {
-  transform: scale(1.03);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(139, 111, 71, 0.3);
+  animation: cardBounce 1.8s ease-in-out infinite;
+  -webkit-animation: cardBounce 1.8s ease-in-out infinite;
+  -moz-animation: cardBounce 1.8s ease-in-out infinite;
+  -ms-animation: cardBounce 1.8s ease-in-out infinite;
+  -o-animation: cardBounce 1.8s ease-in-out infinite;
+}
+
+.grow:hover::before {
+  left: 100%;
 }
 
 .card-image {
@@ -37,6 +94,20 @@
   border-top-right-radius: 0.8rem;
   border-width: 0;
   height: 10rem;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -ms-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+}
+
+.grow:hover .card-image {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 .card-bottom {
@@ -53,10 +124,10 @@
 }
 
 .tag-element-text {
-  color: #d9d0d0;
+  color: #a0826d;
   border-radius: 15px;
   border-width: 1px;
-  border-color: #d9d0d0;
+  border-color: #8b6f47;
   background-color: transparent;
   margin-right: 10px;
   padding-left: 8px;
@@ -65,13 +136,28 @@
   padding-bottom: 2px;
   text-align: center;
   font-size: 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+
+.tag-element-text:hover {
+  background-color: rgba(139, 111, 71, 0.2);
+  border-color: #8b6f47;
+  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+}
 .card-title {
-  color: white;
+  color: #f5e6d3;
   font-weight: bold;
   margin-top: 1rem;
   font-size: 1rem;
@@ -79,13 +165,13 @@
 }
 
 .card-author-bytext {
-  color: #ebebeb;
+  color: #e8d5c4;
   font-weight: normal;
   font-size: 0.6rem;
 }
 
 .card-author {
-  color: white;
+  color: #f5e6d3;
   font-size: 0.8rem;
   font-weight: bold;
   margin-top: 0.2rem;
@@ -93,7 +179,7 @@
 }
 
 .card-description {
-  color: #d9d0d0;
+  color: #e8d5c4;
 
   font-size: 0.65rem;
   margin-top: 0.5rem;
@@ -104,35 +190,61 @@
   background-color: transparent;
   border-width: 1px;
   font-size: 0.6rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.learn-more-button:hover {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 .share-button {
-  color: white;
+  color: #f5e6d3;
   background-color: transparent;
   border-width: 1px;
   font-size: 0.6rem;
   margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
 }
 
 .share {
-  color: white;
+  color: #f5e6d3;
 }
 
 .share-icon {
-  color: white;
+  color: #f5e6d3;
   font-size: 0.6rem;
   text-decoration: none;
 }
 
 .star-default {
-  color: grey;
+  color: #a0826d;
   font-size: 1.5rem;
   margin-left: auto;
   cursor: pointer;
 }
 
 .star-liked {
-  color: #ffdf01;
+  color: #d4af37;
   font-size: 1.5rem;
   margin-left: auto;
   cursor: pointer;

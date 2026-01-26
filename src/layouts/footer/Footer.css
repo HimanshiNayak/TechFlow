@@ -5,15 +5,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #212b44;
+  background-color: #3d2817;
   padding: 1rem;
   margin-top: auto;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
 }
 .made-by {
   text-decoration: none;
-  color: grey;
+  color: #a0826d;
 }
 .github-icon {
-  color: grey;
+  color: #a0826d;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+.github-icon:hover {
+  color: #8b6f47;
 }

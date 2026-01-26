@@ -4,7 +4,7 @@ import whyReadImage from "../../assets/about.png";
 
 const About = () => {
   useEffect(() => {
-    document.title = "SkillStream | About";
+    document.title = "TechFlow | About";
   });
   return (
     <div className='h-100'>
@@ -20,12 +20,14 @@ const About = () => {
             </div>
             <div className='col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center'>
               <p className='about-para-2'>
-                Every course provided here are handpicked, are of best quality
-                and from best instructors all over internet.
+           Discover a wide range of top-quality courses from the best instructors around the world, all in one place and completely free.
+Each course is carefully curated to ensure you get practical, reliable, and up-to-date knowledge that helps you learn smarter and progress faster.
+
+z
                 <br />
-                Enhance your skills to the fullest without spending a single
-                penny. Mark your favourite course from all the courses and learn
-                them at your pace.
+           Explore topics that truly matter, bookmark your favorite courses for easy access, and learn at your own pace without any pressure or limitations.
+Build strong skills, boost your confidence, and grow your career without spending a single penny.
+
               </p>
             </div>
           </div>

@@ -1,15 +1,16 @@
 .navbar {
   font-family: "Poppins";
-  background-color: #212b44;
+  background-color: #3d2817;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .text-color {
-  color: white !important;
+  color: #f5e6d3 !important;
   text-decoration: none;
   margin-left: 1rem;
 }
 .hamburger {
-  background-color: white;
-  color: #212b44;
+  background-color: #f5e6d3;
+  color: #3d2817;
   border-radius: 2rem;
   transform: scale(0.75);
   -webkit-transform: scale(0.75);
@@ -23,21 +24,21 @@
 }
 
 .app-title {
-  color: white !important;
+  color: #f5e6d3 !important;
   font-size: 2rem;
 }
 .title-first {
   font-weight: 800;
 }
 .title-second {
-  color: #04e9ae;
+  color: #8b6f47;
 }
 .nav-button {
   margin: 0 auto;
   display: inline;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #ffffff;
+  color: #f5e6d3;
   font-weight: 500;
   border-radius: 1.5rem;
   border-width: 0.15rem;
@@ -54,11 +55,12 @@
 }
 
 .nav-button-highlight {
-  background-color: #344163;
+  background-color: #4a3428;
 }
 .nav-button:hover {
-  color: #ffffff;
-  border-color: #04e9ae;
+  color: #f5e6d3;
+  border-color: #8b6f47;
+  background-color: rgba(139, 111, 71, 0.1);
 }
 @media screen and (max-width: 768px) {
   .nav-button {
@@ -75,8 +77,8 @@
   padding-right: 1rem;
   border: solid;
   border-color: transparent;
-  background-color: #04e9ae;
-  color: #212b44;
+  background-color: #8b6f47;
+  color: #f5e6d3;
   display: inline;
   font-weight: 800;
   border-radius: 1.5rem;
@@ -86,11 +88,13 @@
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .login-button:hover {
-  color: #ffffff;
-  background-color: #344163;
-  border-color: #04e9ae;
+  color: #f5e6d3;
+  background-color: #4a3428;
+  border-color: #8b6f47;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 768px) {
   .nav-button {

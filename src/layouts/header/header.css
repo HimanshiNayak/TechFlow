@@ -1,14 +1,15 @@
 .free-course {
   padding: 2rem;
   text-align: center;
-  background-color: #212b44;
+  background-color: #3d2817;
   height: 18rem;
   width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .free-course-header {
   font-size: 3.5rem;
   font-weight: 600;
-  color: white;
+  color: #f5e6d3;
 }
 @media (max-width: 768px) {
   .free-course {

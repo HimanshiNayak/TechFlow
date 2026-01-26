@@ -22,7 +22,7 @@ const HomePage = () => {
     } = useGlobalContext();
 
     useEffect(() => {
-        document.title = "SkillStream | Home";
+        document.title = "TechFlow | Home";
     }, []);
 
     useEffect(() => {

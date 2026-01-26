@@ -2,17 +2,18 @@
     margin-top: 2rem;
 }
 .share-info {
-    background-color: #344163;
+    background-color: #4a3428;
     border-radius: 2rem;
     padding: 1rem;
     font-size: 0.7rem;
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .sharing-title {
     font-weight: 600;
     font-style: italic;
-    color: #04e9ae;
+    color: #8b6f47;
 }
 
 .share-buttons {

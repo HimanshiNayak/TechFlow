@@ -41,8 +41,8 @@ const NavBar = () => {
       <Container>
         <Link to="/" href="https://fredemy.vercel.app" target="_top">
           <Navbar.Brand className="app-title">
-            <span className="title-first">Skill</span>
-            <span className="title-second">Stream</span>
+            <span className="title-first">Tech</span>
+            <span className="title-second">Flow</span>
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle
