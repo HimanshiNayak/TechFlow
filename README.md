@@ -1,7 +1,7 @@
-# SkillStream🏫
+# Teach Flow🏫
 
 ## Introduction
-SkillStream is a full-stack web application designed to help users access handpicked, high-quality free courses. This platform ensures seamless user experience and efficient course management with a focus on security and scalability.
+Teach Flow is a full-stack web application designed to help users access handpicked, high-quality free courses. This platform ensures seamless user experience and efficient course management with a focus on security and scalability.
 
 ## Features
 
@@ -38,10 +38,6 @@ SkillStream aims to provide users with a centralized platform for accessing high
 - CRUD functionality for managing courses.
 - Authorization for secure operations.
 
-## Deployment
-
-- **Frontend**: Deployed on Vercel.
-- **Backend**: [Click here](https://github.com/ronit044/SkillStream-Backend) to view the backend repository.
 
 ## Screenshots
 
